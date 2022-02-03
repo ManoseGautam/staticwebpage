@@ -1,0 +1,374 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    max-width: 1400px;
+    min-height: 100vh;
+    display: block;
+    margin:auto;
+    background:gray;
+    font-family: sans-serif;
+}
+
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    background-color:dimgray;
+    
+}
+
+.link-group{
+    list-style: none;
+    display: flex;
+}
+
+.link a{
+    color: white;
+    opacity: 0.5;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    margin: 0 20px;
+    line-height: 80px;
+    transition: .5s;
+    font-size: 20px;
+}
+.link a:hover, .link.active a{
+    opacity: 1;
+}
+
+/*home-section */
+
+.home-section.active{
+    position: fixed;
+    opacity: 1;
+    z-index: 8;
+}   
+
+.home-section{
+    width: 100%;
+    height: 100vh;
+    padding: 0 150px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0; 
+    opacity: 0;
+    transition: .2s;
+
+}
+
+.mee-heading{
+    color: white;
+    font-size: 90px;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+.mee-title{
+    text-transform: capitalize;
+    align-items: center;
+}
+
+.home-img{
+    position: absolute;
+    top: 0;
+    right: 0%;
+    height: 100vh;
+    width: 50%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+.home-section.active,
+.edu-section.active,
+.about-section.active,
+.exp-section.active,
+.contact-section.active{
+    position: relative;
+    opacity: 1;
+    z-index: 8;
+}
+
+/* about section */
+
+.about-section{
+    width: 100%;
+    min-height: 100vh;
+    padding: 150px 100px 0;
+    position: fixed;
+    top: 0%;
+    transition: 1s;
+    opacity: 0;
+}
+
+.about{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 65%;
+    grid-gap: 40px;
+}
+
+.about-img-container{
+    position: relative ;
+}  
+
+.about-info{
+    color: black;
+    opacity: 0.8;
+    font-size: 20px;
+    line-height: 40px;
+}
+.about-img{
+    width: 100%;
+    height:100% ;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.download-cv-btn{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .5s;
+    background: mediumslateblue
+}
+
+.download-cv-btn:hover{
+    background: black;
+}
+
+/* edu section */
+
+.edu-section{
+    width: 100%;
+    min-height: 100vh;
+    padding: 150px 100px 100px;
+    position: fixed;
+    top: 0;
+    transition: 1s;
+    opacity: 0;
+}   
+
+.edu-heading{
+    font-size: 50px;
+    background:dimgray ;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 50px;
+    color: mistyrose ; 
+}  
+
+.edu-container{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+
+}
+
+.edu-card{
+  position: relative;  
+}
+
+.edu-name{
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 30px 0 5px;
+}
+
+.edu-info{
+    text-align: center;
+    opacity: 0.8;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.edu-card:nth-child(1){
+    color:white;
+}
+
+.edu-card:nth-child(2){    
+    color:white;
+}
+
+.edu-card:nth-child(3){
+    color: white;
+}
+
+/*Experience Section*/
+
+.exp-section{
+    width: 100%;
+    min-height: 100vh;
+    padding: 150px 100px 100px;
+    position: absolute;
+    top: 0;
+    transition: 1s;
+    opacity: 0;
+}   
+
+.exp-heading{
+    font-size: 50px;
+    background:dimgray ;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 20px;
+    color: mistyrose ; 
+
+}
+
+.exp-container{
+    width: 95%;
+    margin: auto;
+    
+
+}
+
+.exp-card{
+  position: relative;  
+}
+
+.exp-name{
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 30px 0 3px;
+}
+
+.exp-info{
+    text-align: center;
+    opacity: 0.8;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/*skills*/
+
+.skills{
+    position: relative;
+    margin: 80px 0;
+}
+
+.skill-heading{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.skill-title{
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 5vh;
+    font-size: 30px;
+    color: Black;
+}
+
+.skill-info{
+    text-align: center;
+    list-style-position: inside;
+    font-size: 17px;
+    color: black;
+    opacity: 0.8;
+}
+
+/*Project*/
+
+.project{
+    position: relative;
+    margin: 50px 0;
+}
+
+.project-title{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.project-name{
+    text-decoration: underline;
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.project-info{
+    text-align: center;
+    font-size: 17px;
+    color: black;
+    opacity: 0.8;
+}
+
+/*Contact Section*/
+
+.contact-section{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: 1s;
+    padding: 100px 150px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
+
+.contact-form input, .contact-form textarea{
+    width: 100%;
+    height: 40px;
+    background: pink;
+    border: 1px black;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    text-transform: capitalize;
+    color: black;
+    padding: 5px 10px;
+}
+
+::placeholder{
+    color: gray;
+}
+
+#msg{
+    height: 280px;
+    resize: none;
+    font-family: sans-serif;
+}
+
+.form-submit-btn{
+    background: maroon;
+    color: white;
+    text-transform: capitalize;
+    padding: 15px 40px;
+    display: block;
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
