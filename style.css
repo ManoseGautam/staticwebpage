@@ -343,6 +343,22 @@ body{
     grid-gap: 50px;
     */
 }
+
+.con-title{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    text-decoration-line: underline;
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+
+.con-info{
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    margin-top: 25px;
+}
 /*
 .contact-form input, .contact-form textarea{
     width: 100%;
@@ -368,7 +384,6 @@ body{
 
 .form-submit-btn{
     background: maroon;
-*/
     color: white;
     text-transform: capitalize;
     padding: 15px 40px;
