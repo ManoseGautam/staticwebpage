@@ -330,7 +330,6 @@ body{
 /*Contact Section*/
 
 
-/*
 .contact-section{
     position: absolute;
     top: 0;
@@ -338,11 +337,13 @@ body{
     transition: 1s;
     padding: 100px 150px;
     height: 100vh;
+    /*
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
+    */
 }
-
+/*
 .contact-form input, .contact-form textarea{
     width: 100%;
     height: 40px;
@@ -367,6 +368,7 @@ body{
 
 .form-submit-btn{
     background: maroon;
+*/
     color: white;
     text-transform: capitalize;
     padding: 15px 40px;
