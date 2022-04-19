@@ -135,6 +135,7 @@ body{
     border-radius: 20px;
 }
 
+/*
 .download-cv-btn{
     position: absolute;
     bottom: 20px;
@@ -153,6 +154,7 @@ body{
 .download-cv-btn:hover{
     background: black;
 }
+*/
 
 /* edu section */
 
@@ -326,7 +328,7 @@ body{
 }
 
 /*Contact Section*/
-
+/*
 .contact-section{
     position: absolute;
     top: 0;
@@ -372,3 +374,4 @@ body{
     border-radius: 10px;
     cursor: pointer;
 }
+*/
